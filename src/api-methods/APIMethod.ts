@@ -117,10 +117,6 @@ export abstract class PrivateWithIDAPIMethod extends APIMethod {
     constructor(token: string, protected device_id: string) { super(token, device_id) }
 }
 
-export abstract class PrivateFullAPIMethod extends APIMethod {
-    constructor(token: string, protected device_id: string, protected signature: string) { super(token, device_id, signature) }
-}
-
 export abstract class PublicAPIMethod extends APIMethod {
-    constructor() { super(undefined, undefined) }
+    constructor() { super() }
 }

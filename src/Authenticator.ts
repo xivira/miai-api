@@ -8,7 +8,7 @@ export class MyInvestorAuthenticator {
     constructor(data: MyInvestorUserData) { this.data = data }
 
     async getToken(): Promise<Auth | void> {
-        let response = await MyInvestorAPI.requestToken(this.data.user, this.data.password, this.data.device_id);
+        const response = await MyInvestorAPI.requestToken(this.data.user, this.data.password, this.data.device_id);
 
         if (response.success) {
             if (response.access_token) return new Auth(response.access_token);
