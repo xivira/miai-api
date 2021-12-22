@@ -1,12 +1,19 @@
 {
   "name": "miai-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "commonjs",
   "description": "API implementation of MyInvestor's banking account interface",
   "author": "xivira <npm.5hpgd@slmail.me>",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index",
+  "files": [
+    "lib",
+    "LICENSE",
+    "package-support.json",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc -d"
   },
