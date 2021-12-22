@@ -12,7 +12,7 @@ To add it to your project simply run `npm install miai-api`.
 
 ## Importing the API
 
-MIAI export 4 main classes that allows for ESM-only import declarations.
+MIAI exports 4 main classes that allows for ESM-only import declarations.
 
 ```js
 import { MyInvestorAPI, MyInvestorAuthenticator, Auth, MyInvestorUserDataHandler } from 'miai-api';
