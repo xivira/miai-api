@@ -72,11 +72,12 @@ Handling user data is not always trivial. `MyInvestorUserDataHandler` class can 
 User data comprises of 4 attibutes:
 
 | Attirbute |                                              Usage                                              |
-+-----------+-------------------------------------------------------------------------------------------------+
+|-----------|-------------------------------------------------------------------------------------------------|
 | user      | MyInvestor username used for logging in                                                         |
 | password  | MyInvestor password used for logging in                                                         |
 | device_id | Login identification. It can be any string. Each unique string must be validated via OTP (SMS). |
 | signature | MyInvestor signature used for validating operations (purchace, cancel orders)                   |
+
 
 > NOTE: The *signature* attribute is optional and ideally user input should be required for validating each purchase.
 
