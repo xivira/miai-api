@@ -16,7 +16,7 @@ export class SavingsHistory extends PrivateAPIMethod {
         idCuentaValores: null,
         idCuentaPensiones: null,
         codigoIsin: null,
-        filtroGraficaEnum: "YTD"
+        filtroGraficaEnum: "DESDE_INICIO"
     });
 
     async request() { return (await this._request(parse as any) as Result).result }
